@@ -27,6 +27,8 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
+
+
 //Инструкции для FontAwesome
 
 .fa 
@@ -210,6 +212,17 @@ body textarea:required:valid
 .fa-circle:before 
   content: "\f111"
 
+.fa-chevron-left:before 
+  content: "\f053"
+
+.fa-chevron-right:before 
+  content: "\f054"
+
+.fa-arrow-left:before 
+  content: "\f060"
+
+.fa-arrow-rigth:before 
+  content: "\f061"
 
 
 //Custom Styles Here
@@ -299,13 +312,76 @@ h2
   border: 1px solud grey
   background-color: lightgrey
 
+// Карусель
+
+#carousel 
+  padding: 0 10px 30px 10px
+  margin-top: 30px
+
+/* Control buttons  */
+#carousel .carousel-control
+  background: none
+  color: #222
+  font-size: 2.3em
+  text-shadow: none
+  margin-top: 30px
+
+#carousel .carousel-control.left 
+  left: -30px !important
+
+#carousel .carousel-control.right 
+  right: -70px !important
+
+/* Changes the position of the indicators */
+#carousel .carousel-indicators 
+  right: 50%
+  top: auto
+  bottom: 0px
+  margin-right: -19px
+
+/* Changes the color of the indicators */
+#carousel .carousel-indicators li 
+  background: #c0c0c0
+
+#carousel .carousel-indicators .active 
+  background: #333333
+
+#quote-carousel img
+  width: 250px
+  height: 100px
+
 
 .carousel-control
   background-image: none !important
 
 
+.item blockquote 
+    border-left: none 
+    margin: 0
 
+.item blockquote img 
+    margin-bottom: 10px
+    margin-right: -50px
 
+.item blockquote p:before 
+    content: "\f10d"
+    font-family: 'Fontawesome'
+    float: left
+    margin-right: 10px
+
+.form-inline
+  text-align: center
+  margin-top: 25px
+  input
+    margin-right: 17px
+
+.cta-contactform
+  padding-bottom: 30px !important
+  border: 1px solid red
+  background-color: grey
+
+.cta-contactform-bgc
+  background-color: grey
 
 //ALWAYS END
 @import "media"
