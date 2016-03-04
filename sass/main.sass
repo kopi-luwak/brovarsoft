@@ -224,12 +224,15 @@ body textarea:required:valid
 .fa-arrow-rigth:before 
   content: "\f061"
 
+.fa-map-marker:before 
+  content: "\f041"
 
-//Custom Styles Here
+.fa-envelope-o:before 
+  content: "\f003"
 
-header 
-	margin-top: 1%
-	margin-bottom: 3%
+.fa-phone:before 
+  content: "\f095"
+//Custom Styles Here	
 
 ul 
 	list-style: none	
@@ -243,6 +246,35 @@ nav li
 
 nav li:hover 
 	background-color: 	#D3D3D3
+
+i 
+  margin-right: 7px
+
+/* HEADER*/
+
+.logo
+  font-family: "SupermolotLight"
+  font-weight: 300
+  font-style: normal
+  font-size: 230%
+  border-bottom: 2px solid #feea0d
+
+.sublogo 
+  font-size: 110%
+  letter-spacing: 0.03em
+
+.phone
+  font-size: 140%
+
+header 
+  font-size: 110%
+  margin-top: 1%
+  margin-bottom: 2%
+
+.slogan 
+  display: block
+  margin-top: 20px
+
 
 .slider-background
 	background-color: #e6e7e9
@@ -383,9 +415,15 @@ h2
 .cta-contactform-bgc
   background-color: grey
 
-footer {
+footer 
   background-color: grey !important
-}
+  min-height: 200px
+  padding-bottom: 30px
+  img
+    height: 170px
+    width: 100%
+ 
+
 
 //ALWAYS END
 @import "media"
